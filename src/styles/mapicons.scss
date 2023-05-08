@@ -1,0 +1,12 @@
+.mapViewIcon>ul>li>img {
+    width: 270px;
+    border: 2px solid #ff6b6b;
+    box-shadow: 0px 0px 20px #ff6b6b;
+}
+
+.mapViewIcon>ul>li>img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgb(255, 25, 25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
