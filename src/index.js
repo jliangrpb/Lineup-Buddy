@@ -25,7 +25,7 @@ displayAgentIcon("Killjoy");
 displayAgentIcon("Sova");
 
 document.addEventListener("DOMContentLoaded", function() {
-  var AscentIcon = document.getElementById("AscentIcon");
+  let AscentIcon = document.getElementById("AscentIcon");
   AscentIcon.addEventListener("click", function(e) {
     mapName = "Ascent";
     e.preventDefault();
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-  var SplitIcon = document.getElementById("SplitIcon");
+  let SplitIcon = document.getElementById("SplitIcon");
   SplitIcon.addEventListener("click", function (e) {
     mapName = "Split";
     e.preventDefault();
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-  var FractureIcon = document.getElementById("FractureIcon");
+  let FractureIcon = document.getElementById("FractureIcon");
   FractureIcon.addEventListener("click", function(e) {
     mapName = "Fracture";
     e.preventDefault();
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  var BindIcon = document.getElementById("BindIcon");
+  let BindIcon = document.getElementById("BindIcon");
   BindIcon.addEventListener("click", function(e) {
     mapName = "Bind";
     e.preventDefault();
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  var LotusIcon = document.getElementById("LotusIcon");
+  let LotusIcon = document.getElementById("LotusIcon");
   LotusIcon.addEventListener("click", function(e) {
     mapName = "Lotus";
     e.preventDefault();
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  var PearlIcon = document.getElementById("PearlIcon");
+  let PearlIcon = document.getElementById("PearlIcon");
   PearlIcon.addEventListener("click", function(e) {
     mapName = "Pearl";
     e.preventDefault();
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  var IceboxIcon = document.getElementById("IceboxIcon");
+  let IceboxIcon = document.getElementById("IceboxIcon");
   IceboxIcon.addEventListener("click", function(e) {
     mapName = "Icebox";
     e.preventDefault();
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  var HavenIcon = document.getElementById("HavenIcon");
+  let HavenIcon = document.getElementById("HavenIcon");
   HavenIcon.addEventListener("click", function(e) {
     mapName = "Haven";
     e.preventDefault();

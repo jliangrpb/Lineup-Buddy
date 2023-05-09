@@ -1,6 +1,10 @@
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
+@import url(//db.onlinewebfonts.com/c/561f38b1f4570de0fb8a39d691ab058c?family=Tungsten+Bold);
+/*!*****************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss (1) ***!
+  \*****************************************************************************************************************************************/
 .AgentIconContainer > img {
   width: 65px;
   height: auto;
@@ -15,8 +19,12 @@
   cursor: pointer;
 }
 
+.AgentIconContainer > img {
+  margin-right: 10px;
+}
+
 .mapViewIcon > ul > li > img {
-  width: 270px;
+  width: 330px;
   border: 2px solid #ff6b6b;
   box-shadow: 0px 0px 20px #ff6b6b;
 }
@@ -28,39 +36,55 @@
   cursor: pointer;
 }
 
+.mapViewIcon > ul > li {
+  margin-top: 10px;
+}
+
 body {
-  background: linear-gradient(to bottom, #02070d, #782c2c);
+  background: linear-gradient(to bottom, #02070d, #8c2626);
   opacity: 85%;
 }
 
 #title-lineupBuddy {
-  font-family: "Tungsten";
+  font-family: "Tungsten Bold", sans-serif;
   font-weight: bold;
-  color: rgb(247, 68, 68);
-  text-shadow: 0px 0px 10px rgb(255, 91, 91);
-  font-size: 64px;
+  color: rgb(236, 32, 32);
+  text-shadow: 0px 0px 10px rgb(38, 36, 36);
+  font-size: 80px;
   text-transform: uppercase;
   text-align: center;
 }
 
 #MapHeader {
-  color: rgb(247, 68, 68);
-  text-shadow: 0px 0px 10px rgb(255, 91, 91);
+  font-family: "Tungsten Bold", sans-serif;
+  font-size: 50px;
+  color: rgb(236, 32, 32);
+  text-shadow: 0px 0px 10px rgb(53, 48, 48);
 }
 
 #AgentsHeader {
-  color: rgb(247, 68, 68);
-  text-shadow: 0px 0px 10px rgb(255, 91, 91);
+  font-family: "Tungsten Bold", sans-serif;
+  font-size: 50px;
+  color: rgb(236, 32, 32);
+  text-shadow: 0px 0px 10px rgb(4, 4, 4);
 }
 
 #mapName {
-  color: rgb(247, 68, 68);
-  text-shadow: 0px 0px 10px rgb(255, 91, 91);
+  font-family: "Tungsten Bold", sans-serif;
+  font-size: 50px;
+  color: rgb(236, 32, 32);
+  text-shadow: 0px 0px 10px rgb(56, 54, 54);
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
 
 .Selectors {
   display: flex;
-  flex: 1;
+  flex-grow: 0;
   flex-direction: column;
   height: 100%;
   width: 30%;
@@ -68,13 +92,45 @@ body {
   text-align: center;
 }
 
+.Render {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-indent: 350px;
+}
+
+.footer {
+  font-family: "Tungsten Bold", sans-serif;
+  padding: 18px;
+  padding-top: 1%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+
+#Logo {
+  width: 200px;
+  height: auto;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+
 #viewMap {
   display: flex;
   flex-direction: column;
   margin: 6%;
-  width: 500px;
+  width: 650px;
   object-fit: contain;
   height: auto;
   border: 2px solid #ff6b6b;
   box-shadow: 0px 0px 20px #ff6b6b;
+}
+
+@font-face {
+  font-family: "Tungsten Bold";
+  src: url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot");
+  src: url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff") format("woff"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.svg#Tungsten Bold") format("svg");
 }
