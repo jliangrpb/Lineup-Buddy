@@ -5,10 +5,9 @@ import { displayAgentIcon } from "./scripts/agentIconFetch.js";
 
 //default map setting and agent buttons
 let selectedMap = "Ascent";
-displayMapInfo(selectedMap);
+let selectedAgent = "Brimstone"
 
-let selectedAgent = "Brimstone";
-// displayAgentButtons(selectedMap, selectedAgent);
+displayMapInfo(selectedMap);
 
 
 
@@ -19,7 +18,6 @@ displayMapIcon("Fracture");
 displayMapIcon("Bind");
 displayMapIcon("Lotus");
 displayMapIcon("Pearl");
-displayMapIcon("Icebox");
 displayMapIcon("Haven");
 
 
@@ -61,8 +59,14 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
+  const agentButtonsContainer = document.querySelector(".agentButtons");
+  const renderedPosition = document.querySelector(".PositionImg");
+  const renderedLineup = document.querySelector(".LineupImg");
   let FractureIcon = document.getElementById("FractureIcon");
   FractureIcon.addEventListener("click", function(e) {
+    agentButtonsContainer.innerHTML = "";
+    renderedPosition.innerHTML = "";
+    renderedLineup.innerHTML = ""
     selectedMap = "Fracture";
     e.preventDefault();
     displayMapInfo(selectedMap);
@@ -71,8 +75,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
+  const agentButtonsContainer = document.querySelector(".agentButtons");
+  const renderedPosition = document.querySelector(".PositionImg");
+  const renderedLineup = document.querySelector(".LineupImg");
   let BindIcon = document.getElementById("BindIcon");
   BindIcon.addEventListener("click", function(e) {
+    agentButtonsContainer.innerHTML = "";
+    renderedPosition.innerHTML = "";
+    renderedLineup.innerHTML = ""
     selectedMap = "Bind";
     e.preventDefault();
     displayMapInfo(selectedMap);
@@ -81,8 +91,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
+  const agentButtonsContainer = document.querySelector(".agentButtons");
+  const renderedPosition = document.querySelector(".PositionImg");
+  const renderedLineup = document.querySelector(".LineupImg");
   let LotusIcon = document.getElementById("LotusIcon");
   LotusIcon.addEventListener("click", function(e) {
+    agentButtonsContainer.innerHTML = "";
+    renderedPosition.innerHTML = "";
+    renderedLineup.innerHTML = ""
     selectedMap = "Lotus";
     e.preventDefault();
     displayMapInfo(selectedMap);
@@ -91,28 +107,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
+  const agentButtonsContainer = document.querySelector(".agentButtons");
+  const renderedPosition = document.querySelector(".PositionImg");
+  const renderedLineup = document.querySelector(".LineupImg");
   let PearlIcon = document.getElementById("PearlIcon");
   PearlIcon.addEventListener("click", function(e) {
+    agentButtonsContainer.innerHTML = "";
+    renderedPosition.innerHTML = "";
+    renderedLineup.innerHTML = ""
     selectedMap = "Pearl";
     e.preventDefault();
     displayMapInfo(selectedMap);
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", function() {
-  let IceboxIcon = document.getElementById("IceboxIcon");
-  IceboxIcon.addEventListener("click", function(e) {
-    selectedMap = "Icebox";
-    e.preventDefault();
-    displayMapInfo(selectedMap);
-  });
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
+  const agentButtonsContainer = document.querySelector(".agentButtons");
+  const renderedPosition = document.querySelector(".PositionImg");
+  const renderedLineup = document.querySelector(".LineupImg");
   let HavenIcon = document.getElementById("HavenIcon");
   HavenIcon.addEventListener("click", function(e) {
+    agentButtonsContainer.innerHTML = "";
+    renderedPosition.innerHTML = "";
+    renderedLineup.innerHTML = ""
     selectedMap = "Haven";
     e.preventDefault();
     displayMapInfo(selectedMap);
@@ -192,8 +209,8 @@ function createButton(posImgPath, luImgPath) {
   const button = document.createElement("button");
   button.classList.add("additional-button");
   button.addEventListener("click", function () {
-    renderedPosition.innerHTML = "";
-    renderedLineup.innerHTML = "";
+      renderedPosition.innerHTML = "";
+      renderedLineup.innerHTML = "";
 
     displayPosition(posImgPath);
     displayLineup(luImgPath);
