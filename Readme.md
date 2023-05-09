@@ -38,6 +38,7 @@ https://wireframe.cc/UU2Uul
 APIs
 
 https://valorant-api.com/v1/agents *idk if I'll use this yet*
+
 https://valorant-api.com/v1/maps * not sure how to use yet*
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
