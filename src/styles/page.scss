@@ -55,7 +55,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: left;
-    text-indent: 350px;
+    text-indent: 330px;
 }
 
 .footer{
@@ -77,4 +77,16 @@ body {
     
 }
 
-// #
+#PositionHeader{
+    font-family: "Tungsten Bold", sans-serif;
+    font-size: 50px;
+    color: rgb(236, 32, 32);
+    text-shadow: 0px 0px 10px rgb(56, 54, 54);
+}
+
+#LineupHeader{
+    font-family: "Tungsten Bold", sans-serif;
+    font-size: 50px;
+    color: rgb(236, 32, 32);
+    text-shadow: 0px 0px 10px rgb(56, 54, 54);
+}
