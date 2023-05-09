@@ -30,17 +30,30 @@ displayAgentIcon("Killjoy");
 displayAgentIcon("Sova");
 
 document.addEventListener("DOMContentLoaded", function() {
+  const agentButtonsContainer = document.querySelector(".agentButtons");
+  const renderedPosition = document.querySelector(".PositionImg");
+  const renderedLineup = document.querySelector(".LineupImg");
   let AscentIcon = document.getElementById("AscentIcon");
   AscentIcon.addEventListener("click", function(e) {
+      agentButtonsContainer.innerHTML = "";
+      renderedPosition.innerHTML = "";
+      renderedLineup.innerHTML = "";
     selectedMap = "Ascent";
     e.preventDefault();
     displayMapInfo(selectedMap);
+
   });
 });
 
 document.addEventListener("DOMContentLoaded", function() {
+  const agentButtonsContainer = document.querySelector(".agentButtons");
+  const renderedPosition = document.querySelector(".PositionImg");
+  const renderedLineup = document.querySelector(".LineupImg");
   let SplitIcon = document.getElementById("SplitIcon");
   SplitIcon.addEventListener("click", function (e) {
+    agentButtonsContainer.innerHTML = "";
+    renderedPosition.innerHTML = "";
+    renderedLineup.innerHTML = "";
     selectedMap = "Split";
     e.preventDefault();
     displayMapInfo(selectedMap);
@@ -116,35 +129,35 @@ document.addEventListener("DOMContentLoaded", function () {
     selectedAgent = "Brimstone";
     e.preventDefault();
     console.log ("Brimstone has been clicked!")
-    displayAgentButtons("Brimstone", selectedMap);
+    displayAgentButtons(selectedAgent, selectedMap);
   });
 
   Viper.addEventListener("click", function (e) {
     selectedAgent = "Viper";
     e.preventDefault();
     console.log ("Viper has been clicked!")
-    displayAgentButtons("Viper", selectedMap);
+    displayAgentButtons(selectedAgent, selectedMap);
   });
 
   Killjoy.addEventListener("click", function (e) {
     selectedAgent = "KillJoy";
     e.preventDefault();
     console.log ("Killjoy has been clicked!")
-    displayAgentButtons("Killjoy", selectedMap);
+    displayAgentButtons(selectedAgent, selectedMap);
   });
 
   Sova.addEventListener("click", function (e) {
     selectedAgent = "Sova";
     e.preventDefault();
     console.log ("Sova has been clicked!")
-    displayAgentButtons("Sova", selectedMap);
+    displayAgentButtons(selectedAgent, selectedMap);
   });
 });
 
 function displayAgentButtons(agentName, mapName) {
   const agentButtonsContainer = document.querySelector(".agentButtons");
   const renderedPosition = document.querySelector(".PositionImg");
-  const renderedLineup = document.querySelector(".LineupImg")
+  const renderedLineup = document.querySelector(".LineupImg");
 
   // Clear previous buttons and images
   agentButtonsContainer.innerHTML = "";
@@ -153,10 +166,18 @@ function displayAgentButtons(agentName, mapName) {
 
   // Check the agent and map conditions
   if (agentName === "Brimstone" && mapName === "Ascent") {
-    const Wine_Default = createButton(img1, img2);
+    const Wine_Default = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    Wine_Default.style.position = "absolute";
+    Wine_Default.style.top = "375px";
+    Wine_Default.style.right = "630px";
+    Wine_Default.style.zIndex = "1";
     agentButtonsContainer.appendChild(Wine_Default);
 
-    const A_Main_Default = createButton(img3, img4);
+    const A_Main_Default = createButton("/images/positions/img2.jpeg", "/images/lineup/img4.jpeg");
+    A_Main_Default.style.position = "absolute";
+    A_Main_Default.style.top = "510px";
+    A_Main_Default.style.right = "590px";
+    A_Main_Default.style.zIndex = "1";
     agentButtonsContainer.appendChild(A_Main_Default);
   } else if (agentName === "Brimstone" && mapName === "Split") {
 
@@ -166,9 +187,14 @@ function displayAgentButtons(agentName, mapName) {
 }
 
 function createButton(posImgPath, luImgPath) {
+  const renderedPosition = document.querySelector(".PositionImg");
+  const renderedLineup = document.querySelector(".LineupImg");
   const button = document.createElement("button");
   button.classList.add("additional-button");
   button.addEventListener("click", function () {
+    renderedPosition.innerHTML = "";
+    renderedLineup.innerHTML = "";
+
     displayPosition(posImgPath);
     displayLineup(luImgPath);
   });

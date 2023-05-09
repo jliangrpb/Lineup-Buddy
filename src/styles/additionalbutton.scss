@@ -1,0 +1,14 @@
+.additional-button {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eadddd;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.additional-button:hover {
+    background-color: #d53b0c;
+    /* Set the background color on hover */
+}
