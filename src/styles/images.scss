@@ -1,29 +1,50 @@
+// .Images {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-top: 50px;
+// }
+
+// .Flexbox {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+
+// .PositionHeader,
+// .LineupHeader {
+//     margin-bottom: 10px;
+// }
+
+// .PositionImg,
+// .LineupImg {
+//     max-width: 50px;
+//     max-height: 50px;
+//     object-fit: contain;
+//     margin-top: 10px;
+// }
+
+// .Images .Flexbox:last-child {
+//     margin-left: 300px;
+//     /* Add margin-top to create space above the lineup flexbox */
+// }
+
 .Images {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
 }
 
 .Flexbox {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
 }
 
-.PositionHeader,
-.LineupHeader {
-    margin-bottom: 10px;
-}
-
-.PositionImg,
-.LineupImg {
-    width: 200px;
-    height: auto;
-    margin-top: 10px;
-}
-
-.Images .Flexbox:last-child {
-    margin-left: 300px;
-    /* Add margin-top to create space above the lineup flexbox */
+.PositionImg img,
+.LineupImg img {
+    max-width: 650px;
+    max-height: 650px;
+    object-fit: contain;
 }

@@ -25,7 +25,7 @@ displayMapIcon("Haven");
 displayAgentIcon("Brimstone");
 displayAgentIcon("Viper");
 displayAgentIcon("Killjoy");
-displayAgentIcon("Sova");
+displayAgentIcon("Gekko");
 
 document.addEventListener("DOMContentLoaded", function() {
   const agentButtonsContainer = document.querySelector(".agentButtons");
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const Brimstone = document.getElementById("BrimstoneIcon");
   const Viper = document.getElementById("ViperIcon");
   const Killjoy = document.getElementById("KilljoyIcon");
-  const Sova = document.getElementById("SovaIcon");
+  const Gekko = document.getElementById("GekkoIcon");
 
   Brimstone.addEventListener("click", function (e) {
     selectedAgent = "Brimstone";
@@ -157,16 +157,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   Killjoy.addEventListener("click", function (e) {
-    selectedAgent = "KillJoy";
+    selectedAgent = "Killjoy";
     e.preventDefault();
     console.log ("Killjoy has been clicked!")
     displayAgentButtons(selectedAgent, selectedMap);
   });
 
-  Sova.addEventListener("click", function (e) {
-    selectedAgent = "Sova";
+  Gekko.addEventListener("click", function (e) {
+    selectedAgent = "Gekko";
     e.preventDefault();
-    console.log ("Sova has been clicked!")
+    console.log ("Gekko has been clicked!")
     displayAgentButtons(selectedAgent, selectedMap);
   });
 });
@@ -183,7 +183,7 @@ function displayAgentButtons(agentName, mapName) {
 
   // Check the agent and map conditions
   if (agentName === "Brimstone" && mapName === "Ascent") {
-    const Wine_Default = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    const Wine_Default = createButton("./images/ascent/pos/wine_default_pos.jpg", "./images/ascent/lu/Wine_Default_lu.jpg");
     Wine_Default.style.position = "absolute";
     Wine_Default.style.top = "375px";
     Wine_Default.style.right = "630px";
@@ -196,8 +196,190 @@ function displayAgentButtons(agentName, mapName) {
     A_Main_Default.style.right = "590px";
     A_Main_Default.style.zIndex = "1";
     agentButtonsContainer.appendChild(A_Main_Default);
-  } else if (agentName === "Brimstone" && mapName === "Split") {
 
+    const A_Orb_Default = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    A_Orb_Default.style.position = "absolute";
+    A_Orb_Default.style.top = "510px";
+    A_Orb_Default.style.right = "630px";
+    A_Orb_Default.style.zIndex = "1";
+    agentButtonsContainer.appendChild(A_Orb_Default);
+
+    const A_Orb_Dices = createButton("./images/positions/img2.jpeg", "./images/lineup/img3.jpeg");
+    A_Orb_Dices.style.position = "absolute";
+    A_Orb_Dices.style.top = "500px";
+    A_Orb_Dices.style.right = "625px";
+    A_Orb_Dices.style.zIndex = "1";
+    agentButtonsContainer.appendChild(A_Orb_Dices);
+
+    const Cat_Default = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    Cat_Default.style.position = "absolute";
+    Cat_Default.style.top = "550px";
+    Cat_Default.style.right = "630px";
+    Cat_Default.style.zIndex = "1";
+    agentButtonsContainer.appendChild(Cat_Default);
+
+    const Cat_Dices = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    Cat_Dices.style.position = "absolute";
+    Cat_Dices.style.top = "560px";
+    Cat_Dices.style.right = "635px";
+    Cat_Dices.style.zIndex = "1";
+    agentButtonsContainer.appendChild(Cat_Dices);
+
+    const Back_B_Main_Default = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    Back_B_Main_Default.style.position = "absolute";
+    Back_B_Main_Default.style.top = "830px";
+    Back_B_Main_Default.style.right = "550px";
+    Back_B_Main_Default.style.zIndex = "1";
+    agentButtonsContainer.appendChild(Back_B_Main_Default);
+
+    const B_Main_Default = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    B_Main_Default.style.position = "absolute";
+    B_Main_Default.style.top = "810px";
+    B_Main_Default.style.right = "640px";
+    B_Main_Default.style.zIndex = "1";
+    agentButtonsContainer.appendChild(B_Main_Default);
+
+    const B_Main_Ent_Default = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    B_Main_Ent_Default.style.position = "absolute";
+    B_Main_Ent_Default.style.top = "735px";
+    B_Main_Ent_Default.style.right = "695px";
+    B_Main_Ent_Default.style.zIndex = "1";
+    agentButtonsContainer.appendChild(B_Main_Ent_Default);
+
+    const B_Market_Default = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    B_Market_Default.style.position = "absolute";
+    B_Market_Default.style.top = "735px";
+    B_Market_Default.style.right = "735px";
+    B_Market_Default.style.zIndex = "1";
+    agentButtonsContainer.appendChild(B_Market_Default);
+    
+  } else if (agentName === "Viper" && mapName === "Ascent") {
+    const Wine_Default = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    Wine_Default.style.position = "absolute";
+    Wine_Default.style.top = "365px";
+    Wine_Default.style.right = "620px";
+    Wine_Default.style.zIndex = "1";
+    agentButtonsContainer.appendChild(Wine_Default);
+
+    const Wine_Dices = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    Wine_Dices.style.position = "absolute";
+    Wine_Dices.style.top = "380px";
+    Wine_Dices.style.right = "620px";
+    Wine_Dices.style.zIndex = "1";
+    agentButtonsContainer.appendChild(Wine_Dices);
+
+    const A_Main_Default = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    A_Main_Default.style.position = "absolute";
+    A_Main_Default.style.top = "505px";
+    A_Main_Default.style.right = "570px";
+    A_Main_Default.style.zIndex = "1";
+    agentButtonsContainer.appendChild(A_Main_Default);
+
+    const A_Main_Dices = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    A_Main_Dices.style.position = "absolute";
+    A_Main_Dices.style.top = "520px";
+    A_Main_Dices.style.right = "570px";
+    A_Main_Dices.style.zIndex = "1";
+    agentButtonsContainer.appendChild(A_Main_Dices);
+
+    const Cat_Default = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    Cat_Default.style.position = "absolute";
+    Cat_Default.style.top = "545px";
+    Cat_Default.style.right = "630px";
+    Cat_Default.style.zIndex = "1";
+    agentButtonsContainer.appendChild(Cat_Default);
+
+    const Cat_Dices = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    Cat_Dices.style.position = "absolute";
+    Cat_Dices.style.top = "560px";
+    Cat_Dices.style.right = "630px";
+    Cat_Dices.style.zIndex = "1";
+    agentButtonsContainer.appendChild(Cat_Dices);
+
+    const Back_B_Main_Default = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    Back_B_Main_Default.style.position = "absolute";
+    Back_B_Main_Default.style.top = "830px";
+    Back_B_Main_Default.style.right = "550px";
+    Back_B_Main_Default.style.zIndex = "1";
+    agentButtonsContainer.appendChild(Back_B_Main_Default);
+
+    const B_Main_Default = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    B_Main_Default.style.position = "absolute";
+    B_Main_Default.style.top = "810px";
+    B_Main_Default.style.right = "640px";
+    B_Main_Default.style.zIndex = "1";
+    agentButtonsContainer.appendChild(B_Main_Default);
+
+    const B_Main_Ent_Default = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    B_Main_Ent_Default.style.position = "absolute";
+    B_Main_Ent_Default.style.top = "735px";
+    B_Main_Ent_Default.style.right = "695px";
+    B_Main_Ent_Default.style.zIndex = "1";
+    agentButtonsContainer.appendChild(B_Main_Ent_Default);
+  } else if (agentName === "Killjoy" && mapName === "Ascent") {
+    const Wine_Default = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    Wine_Default.style.position = "absolute";
+    Wine_Default.style.top = "365px";
+    Wine_Default.style.right = "620px";
+    Wine_Default.style.zIndex = "1";
+    agentButtonsContainer.appendChild(Wine_Default);
+
+    const Wine_Dices = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    Wine_Dices.style.position = "absolute";
+    Wine_Dices.style.top = "380px";
+    Wine_Dices.style.right = "620px";
+    Wine_Dices.style.zIndex = "1";
+    agentButtonsContainer.appendChild(Wine_Dices);
+
+    const Back_B_Main_Default = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    Back_B_Main_Default.style.position = "absolute";
+    Back_B_Main_Default.style.top = "830px";
+    Back_B_Main_Default.style.right = "600px";
+    Back_B_Main_Default.style.zIndex = "1";
+    agentButtonsContainer.appendChild(Back_B_Main_Default);
+
+  } else if (agentName === "Gekko" && mapName === "Ascent") {
+    const A_Orb_Dices = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    A_Orb_Dices.style.position = "absolute";
+    A_Orb_Dices.style.top = "510px";
+    A_Orb_Dices.style.right = "630px";
+    A_Orb_Dices.style.zIndex = "1";
+    agentButtonsContainer.appendChild(A_Orb_Dices);
+
+    const A_Main_Dbl_Def = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    A_Main_Dbl_Def.style.position = "absolute";
+    A_Main_Dbl_Def.style.top = "515px";
+    A_Main_Dbl_Def.style.right = "560px";
+    A_Main_Dbl_Def.style.zIndex = "1";
+    agentButtonsContainer.appendChild(A_Main_Dbl_Def);
+  } else if (agentName === "Brimstone" && mapName === "Split") {
+    const A_Main_Default = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    A_Main_Default.style.position = "absolute";
+    A_Main_Default.style.top = "420px";
+    A_Main_Default.style.right = "520px";
+    A_Main_Default.style.zIndex = "1";
+    agentButtonsContainer.appendChild(A_Main_Default);
+
+    const A_Main_Corner = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    A_Main_Corner.style.position = "absolute";
+    A_Main_Corner.style.top = "390px";
+    A_Main_Corner.style.right = "540px";
+    A_Main_Corner.style.zIndex = "1";
+    agentButtonsContainer.appendChild(A_Main_Corner);
+
+    const B_Main_Open = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    B_Main_Open.style.position = "absolute";
+    B_Main_Open.style.top = "870px";
+    B_Main_Open.style.right = "520px";
+    B_Main_Open.style.zIndex = "1";
+    agentButtonsContainer.appendChild(B_Main_Open);
+
+    const B_Main_Safe = createButton("./images/positions/img1.jpeg", "./images/lineup/img3.jpeg");
+    B_Main_Safe.style.position = "absolute";
+    B_Main_Safe.style.top = "930px";
+    B_Main_Safe.style.right = "610px";
+    B_Main_Safe.style.zIndex = "1";
+    agentButtonsContainer.appendChild(B_Main_Safe);
   }
 
   
