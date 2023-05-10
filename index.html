@@ -10,6 +10,9 @@
     <title>Lineup Buddy</title>
     <link href="//db.onlinewebfonts.com/c/561f38b1f4570de0fb8a39d691ab058c?family=Tungsten+Bold" rel="stylesheet"
         type="text/css" />
+    <link rel="icon" href="resizedfavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 
 <body>
@@ -18,6 +21,35 @@
     <div class="topLeftImage">
         <img src="images/val-logo.png" id="Logo">
     </div>
+
+    <a href="https://github.com/jliangrpb/Lineup-Buddy" target="_blank">
+        <div id="githubIcon">
+            <i class="fab fa-github"></i>
+        </div>
+    </a>
+    
+    <div id="infoModalContainer">
+        <!-- <img id="modalIcon" src="circle-question-solid.svg" alt="Info Icon"> -->
+        <i id="modalIcon" class="fa-solid fa-circle-info"></i>
+    </div>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModalButton">&times;</span>
+            <div id="modalContent">
+                <h2 id="modal-header">Welcome to Lineup Buddy! <br>
+                ʕ •ᴥ•ʔ</h2>
+
+                <p id="1">Instructions</p> <br>
+                <p>Click on any map to show a new map </p><br>
+                <p>Click on an agent to show lineup
+                spots</p><br>
+                <p>Click on a spot on the map to render<br>
+                the position and lineup</p>
+            </div>
+        </div>
+    </div>
+
 
     <div class="container">
         <div class="Selectors">
