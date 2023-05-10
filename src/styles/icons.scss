@@ -28,14 +28,14 @@
     z-index: 999;
     left: 0;
     top: 0;
-    left: 35%;
+    left: 30%;
     top: 5%;
     // align-items: center;
     // justify-content: center;
 }
 
 .modal-content {
-    background-color: #ef2020;
+    background-color: #eb2525cf;
     font-family: "Tungsten Bold", sans-serif;
     font-size: 25px;
     padding: 50px;
@@ -60,4 +60,9 @@
 
 .modal-header{
     font-size: 25px;
+}
+
+#modalContent p {
+    margin-bottom: 5px;
+    /* Adjust the value to decrease the gap */
 }
