@@ -1,4 +1,4 @@
-#Lineup Buddy
+# Lineup Buddy
 
 [Live-Link](https://jliangrpb.github.io/Lineup-Buddy/)
 
@@ -7,7 +7,7 @@ Welcome to Lineup-Buddy! For those who are unfamiliar, the game Valorant is a ve
 Worry no more! This project serves as a tool via data visualization tool to show the user(you!) where to position yourself and where to aim your crosshair or hud in order to successfully execute the lineup without having to spend hours committing the lineup to memory (I am very guilty of this). The user should be able to select a Map (Most likely the one you are playing on) and then select an agent from a preset list, the map would then show buttons on the map (which would be the player's agent) where clicking on the button shows the user two images: 1 being an img of the position, 2 the lineup spot. Now get in there and win some rounds. We are Valorant WE are FIGHTERS!
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
-##Functionality 
+## Functionality 
 
 In { Lineup Buddy }, users will be able to
 
@@ -18,13 +18,13 @@ In { Lineup Buddy }, users will be able to
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-##WireFrame
+## WireFrame
 
 https://wireframe.cc/UU2Uul
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-##APIs
+## APIs
 
 https://valorant-api.com/v1/agents 
 
@@ -32,7 +32,7 @@ https://valorant-api.com/v1/maps
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-##Features To Implement In The Future
+## Features To Implement In The Future
 
 {adding additional information under each image to avoid confusion}
 
