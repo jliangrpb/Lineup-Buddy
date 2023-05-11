@@ -7,14 +7,16 @@ Welcome to Lineup-Buddy! For those who are unfamiliar, the game Valorant is a ve
 Worry no more! This project serves as a tool via data visualization tool to show the user(you!) where to position yourself and where to aim your crosshair or hud in order to successfully execute the lineup without having to spend hours committing the lineup to memory (I am very guilty of this). The user should be able to select a Map (Most likely the one you are playing on) and then select an agent from a preset list, the map would then show buttons on the map (which would be the player's agent) where clicking on the button shows the user two images: 1 being an img of the position, 2 the lineup spot. Now get in there and win some rounds. We are Valorant WE are FIGHTERS!
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
-## Functionality 
+## Users Will Be Able To
 
-In { Lineup Buddy }, users will be able to
+### Select A Map
+![Screenshot](gifs/LuBud_Agents_AdobeExpress.gif)
 
-{ Select A Map}
-{ Select An Agent }
-{ On A Selected Map, Select A Preset Button }
-{ Renders A Position Image As Well As Lineup Image }
+### Select An Agent 
+![Screenshot](gifs/LuBud_Maps_AdobeExpress.gif)
+
+### Load Images When Clicking On Button
+![Screenshot](gifs/LuBud_Pos_Lu_AdobeExpress.gif)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -45,3 +47,7 @@ https://valorant-api.com/v1/maps
 {adding more agents}
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
+
+## Contact Me!
+
+Regarding any questions or issues, I can be reached at jeremy.liang612@gmail.com 
