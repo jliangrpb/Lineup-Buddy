@@ -105,6 +105,12 @@ body {
   text-indent: 30px;
 }
 
+.AgentIconContainer h3 {
+  font-family: "Tungsten Bold", sans-serif;
+  color: rgb(194, 19, 19);
+  font-size: 25px;
+}
+
 .footer {
   font-family: "Tungsten Bold", sans-serif;
   padding: 18px;
